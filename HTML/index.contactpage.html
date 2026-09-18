@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact | Quick Movie Summaries</title>
+	<style>
+		header {
+			background-color: lightblue;
+			padding: 20px;
+			border-radius: 10px;
+		}
+
+		body {
+			padding: 20px;
+			background: #ecfeff;
+			font-family: Arial, sans-serif;
+			color: #1f2937;
+		}
+
+		#container {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		nav {
+			text-align: center;
+			border-top: 2px solid black;
+			border-bottom: 2px solid black;
+			padding: 20px;
+			background: #dbeafe;
+			border-radius: 10px;
+			margin-bottom: 20px;
+		}
+
+		nav a {
+			display: inline-block;
+			margin: 0 8px;
+			padding: 10px 15px;
+			background: #ffffff;
+			color: #1d4ed8;
+			text-decoration: none;
+			font-weight: bold;
+			border-radius: 8px;
+			border: 2px solid #1d4ed8;
+		}
+
+		h1, h2 {
+			background: #d9f99d;
+			padding: 10px 14px;
+			border-left: 6px solid #22c55e;
+			border-radius: 8px;
+			display: inline-block;
+			margin-top: 20px;
+		}
+
+		main {
+			width: min(100%, 700px);
+		}
+
+		.contact-card {
+			background: #f3f4f6;
+			padding: 20px;
+			border-left: 5px solid #22c55e;
+			border-radius: 8px;
+			line-height: 1.6;
+		}
+
+		.contact-card p {
+			margin: 8px 0;
+		}
+
+		.contact-card strong {
+			color: #1d4ed8;
+		}
+
+		label {
+			display: block;
+			margin-top: 14px;
+			font-weight: bold;
+		}
+
+		input, textarea {
+			box-sizing: border-box;
+			width: 100%;
+			margin-top: 6px;
+			padding: 10px;
+			border: 2px solid #93c5fd;
+			border-radius: 6px;
+			font: inherit;
+		}
+
+		textarea {
+			min-height: 120px;
+			resize: vertical;
+		}
+
+		button {
+			margin-top: 16px;
+			padding: 10px 15px;
+			background: #1d4ed8;
+			color: #ffffff;
+			border: 0;
+			border-radius: 6px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+
+		*, *::before, *::after {
+			box-sizing: border-box;
+		}
+
+		nav {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 8px;
+		}
+
+		nav a {
+			margin: 0;
+		}
+
+		@media (max-width: 600px) {
+			body {
+				padding: 12px;
+			}
+
+			h1, h2 {
+				max-width: 100%;
+				font-size: 1.25rem;
+			}
+
+			.contact-card {
+				padding: 14px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<a href="index.html">Home</a>
+		<a href="index.page2.html">Page 2</a>
+		<a href="index.page3.html">Page 3</a>
+		<a href="index.contactpage.html">Contact</a>
+	</nav>
+
+	<div id="container">
+		<header>
+			<h1>Quick Movie Summaries</h1>
+		</header>
+
+		<main>
+			<h2>Contact Information</h2>
+
+			<section class="contact-card">
+				<p><strong>Name:</strong> Lydia Franks</p>
+				<p><strong>Email:</strong> <a href="mailto:ljfranks@My.Chattanoogastate.edu">ljfranks@My.Chattanoogastate.edu</a></p>
+				<p><strong>Website:</strong> Quick Movie Summaries</p>
+			</section>
+
+			<h2>Send a Message</h2>
+			<form action="mailto:ljfranks@My.Chattanoogastate.edu" method="post" enctype="text/plain">
+				<label for="name">Name</label>
+				<input id="name" name="name" type="text" required>
+
+				<label for="email">Email</label>
+				<input id="email" name="email" type="email" required>
+
+				<label for="message">Message</label>
+				<textarea id="message" name="message" required></textarea>
+
+				<button type="submit">Send Message</button>
+			</form>
+		</main>
+	</div>
+</body>
+
+</html>
